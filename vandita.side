@@ -1,0 +1,57 @@
+{
+  "id": "ccb27d3c-b0f0-4a05-b653-170e63c6c867",
+  "version": "2.0",
+  "name": "vandita",
+  "url": "https://nta.ac.in",
+  "tests": [{
+    "id": "ef0c49ab-12bb-4d29-abde-f74045e240b6",
+    "name": "chauhan",
+    "commands": [{
+      "id": "d3b50fea-5018-46b6-99d5-5c4876780855",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f2102bd-2c46-410e-8636-2d150793f0c2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1470x919",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eef34792-670b-45d4-9b0f-1b1794c801f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(1) strong",
+      "targets": [
+        ["css=p:nth-child(1) strong", "css:finder"],
+        ["xpath=//section[@id='maincont']/div/div/div[3]/div/div[2]/div[2]/marquee/p/a/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Read More ')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4712",
+      "windowTimeout": 2000
+    }, {
+      "id": "7752ba2d-01f6-45cf-9cf0-cad78032ef18",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4712}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "16efacdf-a64d-49e9-bbe7-6d3dd56776f6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ef0c49ab-12bb-4d29-abde-f74045e240b6"]
+  }],
+  "urls": ["https://nta.ac.in/"],
+  "plugins": []
+}
